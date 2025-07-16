@@ -1,0 +1,5 @@
+{
+  "welcome": "Welcome to Cool App",
+  "greeting": "Hello, {{name}}!",
+  "likes": "You have <0>{{likes}}</0> likes"
+}
