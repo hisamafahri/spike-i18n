@@ -1,20 +1,23 @@
-import i18n from "i18next";
+import i18next from "i18next";
 import { initReactI18next } from "react-i18next";
-import HttpBackend from "i18next-http-backend";
+import en from "./locales/en/config";
+import ja from "./locales/ja/config";
 
-i18n
-  .use(HttpBackend)
-  .use(initReactI18next)
-  .init({
-    lng: "en",
-    fallbackLng: "en",
-    debug: true,
-    backend: {
-      loadPath: "/locales/{{lng}}/{{ns}}.json",
+i18next.use(initReactI18next).init({
+  lng: "en",
+  debug: true,
+  resources: {
+    en: {
+      translation: en,
     },
-    interpolation: {
-      escapeValue: false,
+    ja: {
+      translation: ja,
     },
-  });
+  },
+});
 
-export default i18n;
+const resources = {
+  translation: en,
+} as const;
+
+export default resources;
