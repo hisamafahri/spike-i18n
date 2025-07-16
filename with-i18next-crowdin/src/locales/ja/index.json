@@ -1,5 +1,5 @@
 {
-  "welcome": "Welcome to Cool App",
-  "greeting": "Hello, {{name}}!",
-  "likes": "You have <0>{{likes}}</0> likes"
+  "welcome": "クールアプリへようこそ",
+  "greeting": "こんにちは、{{name}}さん！",
+  "likes": "あなたは<0>{{likes}}</0>件の「いいね！」があります"
 }
